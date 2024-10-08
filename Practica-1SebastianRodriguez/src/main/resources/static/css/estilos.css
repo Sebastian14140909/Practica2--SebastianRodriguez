@@ -1,0 +1,102 @@
+/* Comentario */
+tbody tr:nth-child(odd) {
+    background-color: blue;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: black;
+    color: white;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+    background-color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: brown; 
+    border-bottom: 5px solid #999999; 
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 90px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 996;
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;    
+    font-family: 'Arial', sans-serif; /* Cambiar tipo de letra */
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 17px;
+    margin: 0px;
+    line-height: 90px;
+    width: max-content;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: transform 0.3s; /* Efecto de zoom */
+}
+
+.nav-menu-link:hover {
+    background-color: #FF4500; /* Cambiar color de fondo al pasar el mouse */
+    color: white; /* Cambiar el color de la letra al pasar el mouse */
+    transform: scale(1.1); /* Aumentar tamaño al pasar el mouse */
+}
+
+.aside {
+    position: fixed;
+    top: 20%;
+    left: 0;
+    width: 20%;
+    height: 75%;
+    background-color: aqua;
+}
+
+.section {
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    width: 80%;
+    height: 75%;
+    background-color: bisque;
+    overflow-y: scroll;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background-color: #663300;
+    text-align: center;
+}
